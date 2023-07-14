@@ -1,0 +1,28 @@
+###
+GET http://localhost:5000/api/users
+
+###
+GET http://localhost:5000/api/users/64ae66e6a9a70fff040b8b3e
+
+###
+POST  http://localhost:5000/api/users
+content-type: application/json
+
+{
+   "name": "Emile",
+   "surname": "Vainoraite",
+   "email": "emile@gmail.com",
+   "age": 4
+   
+}
+
+###
+PUT http://localhost:5000/api/users/64ae66e6a9a70fff040b8b3e
+content-type: application/json
+
+{
+   "email": "kamilevainore@gmail.com"
+}
+
+###
+DELETE http://localhost:5000/api/users/64ae66e6a9a70fff040b8b3e
