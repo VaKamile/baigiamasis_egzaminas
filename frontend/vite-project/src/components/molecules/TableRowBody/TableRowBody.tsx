@@ -42,7 +42,7 @@ const TableRowBody = () => {
       setAllUsers(response.data);
       setTotalPages(Math.ceil(response.data.length / itemsPerPage));
     } catch (error) {
-      console.error('Error fetching users:', error);
+      error;
     }
   };
 
@@ -59,7 +59,7 @@ const TableRowBody = () => {
       }
       setDeletingUserId(null);
     } catch (error) {
-      console.error(`Error deleting user with ID ${deletingUserId}:`, error);
+      error;
     }
   };
 
@@ -99,7 +99,7 @@ const TableRowBody = () => {
         setEditedAge('');
       }
     } catch (error) {
-      console.error(`Error editing user with ID ${editingUserId}:`, error);
+      error;
     }
   };
 
@@ -218,8 +218,6 @@ const TableRowBody = () => {
         totalPages={totalPages}
         setCurrentPage={setCurrentPage}
       ></Pagination>
-
-      {/* <StyledPagination>{generatePagination()}</StyledPagination> */}
     </div>
   );
 };

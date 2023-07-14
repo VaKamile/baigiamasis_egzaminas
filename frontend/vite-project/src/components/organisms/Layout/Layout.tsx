@@ -1,6 +1,6 @@
-import Header from '../Header';
-import Footer from '../Footer/Footer';
-import Table from '../molecules/Table';
+import Header from '../../molecules/Header';
+import Footer from '../../atoms/Footer/Footer';
+import Table from '../../molecules/Table';
 
 import { StyledDiv } from './style';
 

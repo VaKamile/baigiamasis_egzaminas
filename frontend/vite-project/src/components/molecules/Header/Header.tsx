@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Modal from '../atoms/Modal';
-import Form from '../molecules/Form/Form';
+import Modal from '../../atoms/Modal';
+import Form from '../Form/Form';
 import { StyledButton, StyledModalChildren } from './style';
 
 const Header = () => {
