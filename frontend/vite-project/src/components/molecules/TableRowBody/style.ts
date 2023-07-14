@@ -38,6 +38,10 @@ export const StyledInputsButtons = styled.div`
 export const StyledEditedButtons = styled.div`
   display: flex;
 `;
+export const StyledDeletedButtons = styled.div`
+  gap: 5px;
+  display: flex;
+`;
 
 export const StyledModalChildren = styled.div`
   text-align: center;

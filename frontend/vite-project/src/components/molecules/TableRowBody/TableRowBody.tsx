@@ -10,6 +10,7 @@ import {
   StyledInputAge,
   StyledInputsButtons,
   StyledEditedButtons,
+  StyledDeletedButtons,
   StyledModalChildren,
 } from './style';
 import Input from '../../atoms/Input';
@@ -170,7 +171,7 @@ const TableRowBody = () => {
                   {deletingUserId === user._id ? (
                     <div>
                       <div>Ar tikrai norite ištrinti?</div>
-                      <div>
+                      <StyledDeletedButtons>
                         <button
                           onClick={() => handleConfirmDelete(user._id)}
                           className='button is-success is-rounded is-responsive  is-focused is-inverted'
@@ -183,7 +184,7 @@ const TableRowBody = () => {
                         >
                           Atšaukti
                         </button>
-                      </div>
+                      </StyledDeletedButtons>
                     </div>
                   ) : (
                     <StyledInputsButtons>
