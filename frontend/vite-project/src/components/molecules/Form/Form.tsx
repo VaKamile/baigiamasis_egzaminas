@@ -36,7 +36,7 @@ const Form: React.FC<FormProps> = ({ onSubmitSuccess }) => {
         formValue
       );
 
-      console.log('Data sent to the database:', response.data);
+      response;
       await onSubmitSuccess();
 
       setName('');
@@ -44,7 +44,7 @@ const Form: React.FC<FormProps> = ({ onSubmitSuccess }) => {
       setEmail('');
       setAge('');
     } catch (error) {
-      console.error('Error sending data to the database:', error);
+      error;
     }
   };
 
